@@ -1,0 +1,12 @@
+<ul class="nav nav-pills">
+  <li class="nav-item">
+    <a class="nav-link" [class.active]="viewType=='map'" href="#" (click)="viewType='map'">Map view</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" [class.active]="viewType=='list'" href="#" (click)="viewType='list'">List view</a>
+  </li>
+</ul>
+<div [ngSwitch]="viewType">
+  <div *ngSwitchCase="'map'">Map view</div>
+  <div *ngSwitchCase="'list'">List view</div>
+</div>

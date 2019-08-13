@@ -1,0 +1,5 @@
+<p>
+  Profile {{getId}} {{getLogin}}
+</p>
+<button [routerLink]="['/followers/', getId+1, getLogin]" class="btn btn-primary">Next</button>
+<button class="btn btn-default" (click)="submit()">Save</button>
